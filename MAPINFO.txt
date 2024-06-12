@@ -1,0 +1,4 @@
+Gameinfo
+{
+PlayerClasses = "MW3Player"
+}

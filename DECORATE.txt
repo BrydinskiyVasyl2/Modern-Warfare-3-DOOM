@@ -1,0 +1,71 @@
+ACTOR MW3Player : DoomPlayer
+{
+  Player.StartItem "P99"
+  Player.StartItem "CombatKnife"
+  Player.StartItem "G36CLoaded", 30
+  Player.StartItem "KSGLoaded", 8
+  Player.StartItem "P99Loaded", 12
+  Player.StartItem "P99AMMO", 50
+}
+
+Actor PistolSpawner : RandomSpawner Replaces Pistol
+{
+DropItem "P99"
+}
+
+Actor ChainsawSpawner : RandomSpawner Replaces Chainsaw
+{
+DropItem "G36C"
+}
+
+Actor ChaingunSpawner : RandomSpawner Replaces Chaingun
+{
+DropItem "G36C"
+}
+
+Actor SuperShotgunSpawner : RandomSpawner Replaces SuperShotgun
+{
+DropItem "G36C"
+DropItem "KSG"
+}
+
+Actor ClipSpawner : Randomspawner Replaces Clip
+{
+  Dropitem "P99AMMO"
+  Dropitem "G36CAmmo"
+}
+
+Actor ClipBoxSpawner : Randomspawner Replaces ClipBox
+{
+  Dropitem "P99AMMOBox"
+  Dropitem "G36CAmmoBig"
+}
+
+Actor PlasmaRifleSpawner : RandomSpawner Replaces PlasmaRifle
+{
+DropItem "G36C"
+DropItem "KSG"
+}
+
+Actor BFG9000Spawner : RandomSpawner Replaces BFG9000
+{
+DropItem "G36C"
+DropItem "KSG"
+DropItem "MW3RocketLauncher"
+}
+
+Actor CellSpawner : Randomspawner Replaces Cell
+{
+  Dropitem "P99AMMO"
+  Dropitem "G36CAmmo"
+  Dropitem "Shell"
+  Dropitem "RocketAmmo"
+}
+
+Actor CellPackSpawner : Randomspawner Replaces CellPack
+{
+  Dropitem "P99AMMOBox"
+  Dropitem "G36CAmmoBig"
+  Dropitem "ShellBox"
+  Dropitem "RocketBox"
+}
